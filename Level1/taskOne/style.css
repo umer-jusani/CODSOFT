@@ -1,1 +1,269 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper {
+  padding: 0 3rem;
+}
+
+/* contact-section */
+.contact-section {
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 0, 1) 0%,
+    rgba(236, 123, 42, 1) 50%,
+    rgba(230, 85, 209, 1) 100%
+  );
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.contact_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-section a {
+  padding: 0 1rem;
+  border-left: 2px solid white;
+  color: white;
+}
+
+.contact-section a i {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
+
+.contact_info button {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 15px;
+  border-radius: 35px;
+  font-size: 15px;
+}
+
+/* Menu Section */
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-section .logo {
+  display: flex;
+  margin: 10px 0;
+}
+
+.logo h1 {
+  padding-top: 8px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.menu-section i {
+  margin-right: 10px;
+  color: rgb(161, 140, 0);
+  font-size: 50px;
+}
+
+.menu-section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-section ul li,
+a {
+  font-weight: 600;
+  color: black;
+  margin-right: 20px;
+}
+
+.menu-section ul a {
+  background-color: orange;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.menu-section .search {
+  color: white;
+  font-size: 20px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 7px;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 35rem;
+  width: 100%;
+  background: url("./images/istockphoto-1137929235-170667a.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-section .content {
+  position: absolute;
+  max-width: 80%;
+  width: 100%;
+  padding: 0 2.5rem;
+  color: rgb(189, 189, 189);
+  border-left: 4px solid #ec7b2a;
+  z-index: 1;
+  position: relative;
+  padding: 10px;
+}
+
+.content h4 {
+  margin-bottom: 11px;
+  letter-spacing: 9px;
+  word-spacing: 9px;
+  font-size: 19px;
+}
+
+.content h3 {
+  font-size: 45px;
+  letter-spacing: 2px;
+  margin-bottom: 11px;
+}
+
+.content p {
+  margin-bottom: 15px;
+  line-height: 24px;
+}
+
+.read_more {
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 0, 1) 0%,
+    rgba(236, 123, 42, 1) 50%,
+    rgba(230, 85, 209, 1) 100%
+  );
+  border: 2px solid rgb(189, 189, 189);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.content div button:last-child {
+  background: transparent;
+  border: 2px solid rgb(189, 189, 189);
+  padding: 10px 15px;
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(189, 189, 189);
+}
+
+/* Ability Section */
+.ability-section {
+  width: 100%;
+  min-height: 200px;
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 0, 1) 0%,
+    rgba(236, 123, 42, 1) 50%,
+    rgba(230, 85, 209, 1) 100%
+  );
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.services {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.launchBusiness div {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.launchBusiness div i {
+  font-size: 25px;
+  margin-right: 20px;
+}
+
+.launchBusiness div h3 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 550;
+}
+
+.launchBusiness p {
+  line-height: 25px;
+}
+
+/* About Section  */
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.about-section .details h2 {
+  font-size: 31px;
+  margin-bottom: 19px;
+  border-bottom: 2px solid #ec7b2a;
+  padding: 5px;
+  width: 172px;
+}
+
+.about-section .details h5 {
+  margin-bottom: 19px;
+  font-size: 22px;
+  width: 636px;
+  line-height: 28px;
+}
+
+.about-section .details p {
+  line-height: 2;
+  margin-bottom: 19px;
+}
+
+.about-section .image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
