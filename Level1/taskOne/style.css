@@ -15,7 +15,7 @@ ul li {
 }
 
 .wrapper {
-  padding: 0 3rem;
+  padding: 0 5rem;
 }
 
 /* contact-section */
@@ -92,6 +92,17 @@ a {
   font-weight: 600;
   color: black;
   margin-right: 20px;
+}
+
+.menu-section ul li:hover {
+  color: #ec7b2a;
+  cursor: pointer;
+}
+.menu-section ul a:hover {
+  color: #ec7b2a;
+  cursor: pointer;
+  background: #000;
+  transition-duration: 0.5s;
 }
 
 .menu-section ul a {
@@ -174,7 +185,7 @@ a {
   );
   border: 2px solid rgb(189, 189, 189);
   color: white;
-  padding: 10px 15px;
+  padding: 11px 20px;
   border-radius: 35px;
   font-size: 15px;
   font-weight: 600;
@@ -242,12 +253,12 @@ a {
   padding-bottom: 5rem;
 }
 
-.about-section .details h2 {
+.main_head {
   font-size: 31px;
   margin-bottom: 19px;
-  border-bottom: 2px solid #ec7b2a;
+  border-bottom: 4px solid #ec7b2a;
   padding: 5px;
-  width: 172px;
+  width: 240px;
 }
 
 .about-section .details h5 {
@@ -266,4 +277,55 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Services Section */
+.service-section {
+  margin-bottom: 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 4rem;
+}
+
+.box {
+  width: 272px;
+  position: relative;
+}
+
+.box img {
+  width: 100%;
+  border-radius: 10px;
+  height: 175px;
+}
+
+.service {
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  border-radius: 30px;
+  background-color: white;
+  top: 136px;
+  z-index: 1000;
+  right: -1px;
+}
+
+.service i {
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(161, 140, 0, 1) 0%,
+    rgba(236, 123, 42, 1) 50%,
+    rgba(230, 85, 209, 1) 100%
+  );
+  color: white;
+}
+
+.service h3 {
+  margin: auto;
+  padding: 0 13px;
 }
